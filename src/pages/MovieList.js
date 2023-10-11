@@ -8,7 +8,7 @@ export const MovieList = ({apiPath, title}) => {
   //const [movies, setMovies] = useState([]);  
   const {data: movies} = useFetch(apiPath);
 
-  const pageTitle = useTitle(title);
+  useTitle(title);
 
   // useEffect(() => { 
   //   document.title = `${title} / FilmDirectory`
